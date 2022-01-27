@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vujahday+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1rem;
+  
+}
+.form-container .forms {
+  max-width: 28em;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  border: 2px solid #4f4371;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  background: #ffffff;
+ 
+}
+.form-container .forms .heading {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #4f4371;
+}
+.form-container .forms .form-elements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 0.8rem;
+  flex: 1;
+}
+.form-container .forms .form-elements label {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #4f4371;
+}
+.form-container .forms .form-elements label.error {
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: red;
+}
+.form-container .forms .form-elements label .required-fields {
+  font-size: 0.8rem;
+  color: red;
+}
+.form-container .forms .form-elements .file-type {
+  font-size: 0.9rem;
+  font-family: "Open Sans", sans-serif;
+}
+.form-container .forms .form-elements .input-types {
+  flex: 1;
+  border: none;
+  outline: none;
+  border: 1px solid #0f0f0f;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+}
+.form-container .forms .form-elements .input-types:focus {
+  border: 2px solid #4f4371;
+}
+.form-container .forms .form-elements .input-types::-moz-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.form-container .forms .form-elements .input-types:-ms-input-placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.form-container .forms .form-elements .input-types::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+}
+.form-container .forms .form-elements #branch {
+  cursor: pointer;
+}
+.form-container .forms .form-elements .submit-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.3rem;
+  width: 11em;
+  background: #4f4371;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.form-container .forms #submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) and (max-width: 1080px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .form-container .forms {
+    width: 30em;
+    flex: 1;
+  }
+}
+@media (min-width: 280px) and (max-width: 640px) {
+  .form-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+  }
+  .form-container .forms {
+    width: 90%;
+    display: flex;
+    flex: 1;
+  }
+}/*# sourceMappingURL=forms.css.map */
